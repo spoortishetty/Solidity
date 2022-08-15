@@ -72,7 +72,7 @@ contract MyCryptotoken {
         return true;
     }
 
-    function _approve(address owner, address spender, uint256 amount) internal virtual {
+    function _approve(address owner, address spender, uint256 amount) public {
         require(owner != address(0), "ERC20: approve from the zero address");
         require(spender != address(0), "ERC20: approve to the zero address");
 
